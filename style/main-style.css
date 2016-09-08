@@ -68,28 +68,13 @@ header {
 }
 
 #container-contact {
-  background-color: #4A90E2;
   margin-top: 50px;
   margin-bottom: 50px;
+  overflow: auto;
 }
 
-form {
-  margin-top: 30px;
-}
-
-form input, form textarea, form #buttonSubmit {
-  margin-bottom: 25px;
-}
-
-#buttonSubmit {
-  background-color: #FFF;
-}
-
-#buttonSubmit:hover {
-  background-color: #4A90E2;
-  border: 1px solid #FFF;
-  color: #FFF;
-  transition: 0.2s ease;
+#container-contact > iframe {
+  height: 900px;
 }
 
 footer {
