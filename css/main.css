@@ -1,0 +1,139 @@
+@media  (min-width: 768px) {
+
+  #bgMainSection {
+    background: url("../img/background-main-section.png") center;
+    width: 100%;
+    height: 600px;
+    overflow: auto;
+  }
+
+  nav {
+    margin-top: 50px;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: #FFF;
+    float: right;
+    height: 100px;
+    width: 33.33%;
+  }
+
+  nav ul a:hover {
+    background-color: #FFF;
+    color: #4AB3F4;
+    text-decoration: none;
+  }
+
+  nav ul a li {
+    margin-top: 38px;
+  }
+
+  #avatar {
+    margin-top: 87px;
+  }
+
+  #avatar > h1 {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 30px;
+  }
+
+  #sectionInProgress {
+    margin-bottom: 100px;
+  }
+
+  #sectionInProgress h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+  }
+
+  #sectionInProgress h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+  }
+
+  #sectionInProgress a {
+    display: block;
+    margin-top: 50px;
+  }
+
+  #sectionInProgress p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+  }
+
+  #skillInProgress a {
+    margin-top: 67px;
+  }
+
+  #skillInProgress p {
+    margin-top: 76px;
+  }
+
+  #dividerSectionInProgress{
+    width: 4px;
+    background-color: #E6ECF0;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+
+  #bgSectionDone {
+    height: 100px;
+    width: 100%;
+    background: url("../img/bg-section-done.png") center;
+  }
+
+  #sectionDone {
+    background-color: #E6ECF0;
+    padding-bottom: 150px;
+  }
+
+  #sectionDone h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+  }
+
+  #sectionDone h2 {
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #sectionDone a {
+    margin-top: 50px;
+    display: block;
+  }
+
+  #sectionDone p {
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #dividerWorkDone {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  #firstCircle {
+    margin-right: 125px;
+  }
+
+  #secondCircle {
+    margin-right: 125px;
+  }
+
+  #social {
+    height: 200px;
+    background-color: #E62117;
+    padding-top: 75px;
+  }
+
+}
