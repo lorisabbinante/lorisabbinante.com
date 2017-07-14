@@ -10,6 +10,12 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css" type="text/css">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+
     <!-- Main Style -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
@@ -37,6 +43,185 @@
     </script>
   </head>
   <body>
+
+  <!-- Main Section -->
+  <div id="bgMainSection">
+    <div class="container">
+
+      <!-- Nav -->
+      <div class="row">
+        <nav class="col-sm-6 col-sm-offset-6 text-center">
+            <ul>
+              <a href="#social">
+                <li>Social</li>
+              </a>
+              <a href="#bgSectionDone">
+                <li>Portfolio</li>
+              </a>
+              <a href="#sectionInProgress">
+                <li>Work in Progress</li>
+              </a>
+              <a class="visible-xs-block" href="#">
+                <li>MOBILE</li>
+              </a>
+            </ul>
+        </nav>
+      </div>
+
+      <!-- Avatar -->
+      <div id="avatar" class="row text-center">
+        <img src="img/avatar.png" alt="avatar">
+        <h1>I am a Programmer.</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section in Progress -->
+  <div id="sectionInProgress" class="text-center">
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Work in Progress -->
+        <div class="col-sm-6">
+          <h1>Work in Progress</h1>
+          <h2>Site Store-Front</h2>
+          <a href="http://grafica2006.com" target="_blank">
+            <img class="img-responsive center-block" src="img/grafica2006-progress-desktop.jpg" alt="Work in progress">
+          </a>
+          <p>Grafica2006.com is the first real site i created.<br>It uses a template called Agency built upon<br>the famous CSS framework Bootstrap.</p>
+        </div>
+
+        <!-- Skill in Progress -->
+        <div id="skillInProgress" class="col-sm-6">
+          <h1>Skill in Progress</h1>
+          <h2>JavaScript</h2>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+            <img src="img/js-progress-desktop.png" alt="Logo javascript">
+          </a>
+          <p>JavaScript is one of the most used programming<br>language used in web development.</p>
+        </div>
+
+        <!-- Divider -->
+        <div id="dividerSectionInProgress" class="hidden-xs"></div>
+
+      </div> <!-- ./row -->
+    </div> <!-- ./container -->
+
+  </div> <!-- ./sectionInProgress -->
+
+  <!-- Section Done -->
+  <div id="bgSectionDone"></div>
+  <div id="sectionDone">
+
+    <div class="container">
+
+      <div class="row text-center">
+        <h1>Work Done</h1>
+      </div> <!-- ./title -->
+
+      <!-- Work Done -->
+      <div class="row text-center">
+
+        <div class="col-sm-4">
+          <h2>Site Store-Front</h2>
+          <a href="http://grafica2006.com" target="_blank">
+            <img class="img-responsive" src="img/grafica2006-done-desktop.jpg" alt="First project done">
+          </a>
+          <p>I created Grafica2006.com for improve my skills in<br>HTML5 and CSS3 combined in Bootstrap</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2>CV Online</h2>
+          <a href="http://lorisabbinante.com" target="_blank">
+            <img class="img-responsive" src="img/lorisabbinante-done-desktop.png" alt="Second project done">
+          </a>
+          <p>The design of my CV/Portfolio Page is made by me<br>and it is coded with Bootstrap (HTML5+CSS3) and<br>a little of JavaScript.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2>Coming Soon</h2>
+          <a href="#">
+            <img class="img-responsive" src="img/comingsoon-done-desktop.png" alt="Coming Soon">
+          </a>
+          <p>Coming Soon</p>
+        </div>
+
+      </div> <!-- ./workDone -->
+
+      <!-- Divider workDone -->
+      <div id="dividerWorkDone" class="text-center">
+        <i id="firstCircle" class="fa fa-circle" aria-hidden="true"></i>
+        <i id="secondCircle" class="fa fa-circle" aria-hidden="true"></i>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+      </div>
+
+      <!-- Title Skill Achieved -->
+      <div class="row text-center">
+        <h1>Skill Achieved</h1>
+      </div> <!-- ./title -->
+
+      <!-- Skill Achieved -->
+      <div class="row text-center">
+        <div class="col-sm-3 col-sm-offset-1">
+          <h2>HTML5</h2>
+          <a href="#">
+            <img class="img-responsive center-block" src="img/html5-done-desktop.png" alt="Logo HTML5">
+          </a>
+          <p>HTML5 is the newest mark-up language<br>to structuring web page.</p>
+        </div>
+
+        <div class="col-sm-3 col-sm-offset-4">
+          <h2>CSS3</h2>
+          <a href="#">
+            <img class="img-responsive center-block" src="img/css3-done-desktop.png" alt="Logo CSS3">
+          </a>
+          <p>CSS3 is the newest language to modify<br>the aspect of a web page.</p>
+        </div> <!-- ./skillAchieved -->
+
+      </div> <!-- ./row -->
+
+    </div> <!-- ./container -->
+  </div> <!-- ./sectionDone -->
+
+  <footer id="social">
+    <div class="container">
+      <div class="row text-center">
+
+        <div class="col-sm-2">
+          <a href="https://github.com/lorisabbinante" target="_blank">
+            <i class="fa fa-5x fa-github fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://twitter.com/lorisabbinante" target="_blank">
+            <i class="fa fa-5x fa-twitter fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://medium.com/@lorisabbinante" target="_blank">
+            <i class="fa fa-5x fa-medium fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <a href="#" target="_blank">
+            <i class="fa fa-5x fa-twitch fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://www.instagram.com/lorisabbinante/" target="_blank">
+            <i class="fa fa-5x fa-instagram fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <a href="mailto:work.loris@gmail.com">
+            <i class="fa fa-5x fa-envelope fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
 
   <!-- jQuery 3.2.1 -->
