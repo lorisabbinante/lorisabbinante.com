@@ -1,4 +1,4 @@
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
 
   #bgMainSection {
     background: url("../img/background-main-section.png") center;
@@ -135,5 +135,75 @@
     background-color: #E62117;
     padding-top: 75px;
   }
+
+}
+
+@media (max-width: 768px) {
+
+  #bgMainSection {
+    background: url("../img/bg-mobile-main-section.png") center;
+    width: 100%;
+    height: 600px;
+    overflow: auto;
+  } /* dividere */
+
+  nav {
+    margin-top: 50px;
+  } /* uguale */
+
+  nav > ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+  } /* uguale */
+
+  nav ul a {
+    text-decoration: none;
+    color: #FFF;
+    float: right;
+    height: 100px;
+    width: 33.33%;
+  } /* uguale */
+
+  nav ul a:hover {
+    background-color: #FFF;
+    color: #4AB3F4;
+    text-decoration: none;
+  } /* uguale */
+
+  nav ul a li {
+    margin-top: 38px;
+  } /* uguale */
+
+  #menuMobile {
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+  } /* lascia */
+
+  #menuMobile i {
+    margin-top: -23px;
+    color: #4AB3F4;
+  } /* lascia */
+
+  #avatar {
+    margin-top: 87px;
+  } /* uguale */
+
+  #avatar > h1 {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 30px;
+  } /* uguale */
+
+  #sectionInProgress h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+  } /* uguale */
+
+  #sectionInProgress h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+  } /* uguale */
 
 }
