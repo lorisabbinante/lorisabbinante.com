@@ -31,15 +31,14 @@
     <meta name="description" content="I'm Loris Abbinante, and i'm studying hard to become a developer.">
     <title>Portfolio Page of Loris Abbinante</title>
 
-    <!-- Google Analytics -->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83804452-1"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
 
-      ga('create', 'UA-83804452-1', 'auto');
-      ga('send', 'pageview');
+      gtag('config', 'UA-83804452-1');
     </script>
   </head>
   <body>
@@ -52,16 +51,16 @@
       <div class="row">
         <nav class="col-sm-6 col-sm-offset-6 text-center">
             <ul>
-              <a class="hidden-xs" href="#social">
+              <a href="#social">
                 <li>Social</li>
               </a>
-              <a class="hidden-xs" href="#bgSectionDone">
+              <a href="#bgSectionDone">
                 <li>Portfolio</li>
               </a>
-              <a class="hidden-xs" href="#sectionInProgress">
+              <a href="#sectionInProgress">
                 <li>Work in Progress</li>
               </a>
-              <a id="menuMobile" class="visible-xs-block" href="#">
+              <a id="menuMobile" class="hidden-xs hidden-sm hidden-md hidden-lg" href="#">
                 <li><i class="fa fa-bars fa-5x" aria-hidden="true"></i></li>
               </a>
             </ul>
@@ -70,8 +69,18 @@
 
       <!-- Avatar -->
       <div id="avatar" class="row text-center">
-        <img src="img/avatar.png" alt="avatar">
-        <h1>I am a Programmer.</h1>
+        <img src="img/desktop/avatar.png" alt="avatar">
+
+        <div class="clearfix"></div>
+
+        <div id="typed-strings">
+        <h1>I am a <span>Programmar</span></h1>
+        <h1>I am a <span>Pro</span></h1>
+        <h1>I am a <span>Programmm</span></h1>
+        <h1>I am a <span>Problem Solver</span></h1>
+        <h1>I could <span>write code</span></h1>
+        </div>
+        <span id="typed"></span>
       </div>
     </div>
   </div>
@@ -82,22 +91,43 @@
     <div class="container">
       <div class="row">
 
-        <!-- Work in Progress -->
-        <div class="col-sm-6">
+        <!-- Work in Progress Desktop -->
+        <div class="col-sm-6 hidden-xs">
           <h1>Work in Progress</h1>
           <h2>Site Store-Front</h2>
           <a href="http://grafica2006.com" target="_blank">
-            <img class="img-responsive center-block" src="img/grafica2006-progress-desktop.jpg" alt="Work in progress">
+            <img class="shadow-img img-responsive center-block" src="img/desktop/grafica2006-progress-desktop.jpg" alt="Work in progress">
           </a>
           <p>Grafica2006.com is the first real site i created.<br>It uses a template called Agency built upon<br>the famous CSS framework Bootstrap.</p>
         </div>
 
-        <!-- Skill in Progress -->
-        <div id="skillInProgress" class="col-sm-6">
+        <!-- Work in Progress Mobile -->
+        <div id="workInProgressMobile" class="visible-xs">
+          <h1>Work in Progress</h1>
+          <h2>Site Store-Front</h2>
+          <a href="http://grafica2006.com" target="_blank">
+            <img class="shadow-img center-block" src="img/mobile/grafica2006-progress-mobile.jpg" alt="Work in progress">
+          </a>
+          <p>Grafica2006.com is the first real site i created.<br>It uses a template called Agency built upon<br>the famous CSS framework Bootstrap.</p>
+          <div id="dividerSectionInProgressMobile"></div>
+        </div>
+
+        <!-- Skill in Progress Desktop -->
+        <div id="skillInProgress" class="col-sm-6 hidden-xs">
           <h1>Skill in Progress</h1>
           <h2>JavaScript</h2>
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-            <img src="img/js-progress-desktop.png" alt="Logo javascript">
+            <img class="shadow-img" src="img/desktop/js-progress-desktop.png" alt="Logo javascript">
+          </a>
+          <p>JavaScript is one of the most used programming<br>language used in web development.</p>
+        </div>
+
+        <!-- Skill in Progress Mobile -->
+        <div id="skillInProgressMobile" class="col-sm-6 visible-xs">
+          <h1>Skill in Progress</h1>
+          <h2>JavaScript</h2>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+            <img class="shadow-img" src="img/desktop/js-progress-desktop.png" alt="Logo javascript">
           </a>
           <p>JavaScript is one of the most used programming<br>language used in web development.</p>
         </div>
@@ -112,7 +142,7 @@
 
   <!-- Section Done -->
   <div id="bgSectionDone"></div>
-  <div id="sectionDone">
+  <div id="sectionDone" class="text-center">
 
     <div class="container">
 
@@ -121,12 +151,12 @@
       </div> <!-- ./title -->
 
       <!-- Work Done -->
-      <div class="row text-center">
+      <div id="workDone" class="row text-center">
 
         <div class="col-sm-4">
           <h2>Site Store-Front</h2>
           <a href="http://grafica2006.com" target="_blank">
-            <img class="img-responsive" src="img/grafica2006-done-desktop.jpg" alt="First project done">
+            <img class="shadow-img-workDone-mobile img-responsive center-block" src="img/desktop/grafica2006-done-desktop.jpg" alt="First project done">
           </a>
           <p>I created Grafica2006.com for improve my skills in<br>HTML5 and CSS3 combined in Bootstrap</p>
         </div>
@@ -134,7 +164,7 @@
         <div class="col-sm-4">
           <h2>CV Online</h2>
           <a href="http://lorisabbinante.com" target="_blank">
-            <img class="img-responsive" src="img/lorisabbinante-done-desktop.png" alt="Second project done">
+            <img class="shadow-img-workDone-mobile img-responsive center-block" src="img/desktop/lorisabbinante-done-desktop.png" alt="Second project done">
           </a>
           <p>The design of my CV/Portfolio Page is made by me<br>and it is coded with Bootstrap (HTML5+CSS3) and<br>a little of JavaScript.</p>
         </div>
@@ -142,7 +172,7 @@
         <div class="col-sm-4">
           <h2>Coming Soon</h2>
           <a href="#">
-            <img class="img-responsive" src="img/comingsoon-done-desktop.png" alt="Coming Soon">
+            <img class="shadow-img-workDone-mobile img-responsive center-block" src="img/desktop/comingsoon-done-desktop.png" alt="Coming Soon">
           </a>
           <p>Coming Soon</p>
         </div>
@@ -166,7 +196,7 @@
         <div class="col-sm-3 col-sm-offset-1">
           <h2>HTML5</h2>
           <a href="#">
-            <img class="img-responsive center-block" src="img/html5-done-desktop.png" alt="Logo HTML5">
+            <img class="shadow-img img-responsive center-block" src="img/desktop/html5-done-desktop.png" alt="Logo HTML5">
           </a>
           <p>HTML5 is the newest mark-up language<br>to structuring web page.</p>
         </div>
@@ -174,7 +204,7 @@
         <div class="col-sm-3 col-sm-offset-4">
           <h2>CSS3</h2>
           <a href="#">
-            <img class="img-responsive center-block" src="img/css3-done-desktop.png" alt="Logo CSS3">
+            <img class="shadow-img img-responsive center-block" src="img/desktop/css3-done-desktop.png" alt="Logo CSS3">
           </a>
           <p>CSS3 is the newest language to modify<br>the aspect of a web page.</p>
         </div> <!-- ./skillAchieved -->
@@ -188,32 +218,32 @@
     <div class="container">
       <div class="row text-center">
 
-        <div class="col-sm-2">
-          <a href="https://github.com/lorisabbinante" target="_blank">
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/s3AM8i" target="_blank">
             <i class="fa fa-5x fa-github fa-inverse" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="col-sm-2">
-          <a href="https://twitter.com/lorisabbinante" target="_blank">
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/bZdkh8" target="_blank">
             <i class="fa fa-5x fa-twitter fa-inverse" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="col-sm-2">
-          <a href="https://medium.com/@lorisabbinante" target="_blank">
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/H8yJf1" target="_blank">
             <i class="fa fa-5x fa-medium fa-inverse" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-xs-4 icon-mobile">
           <a href="#" target="_blank">
             <i class="fa fa-5x fa-twitch fa-inverse" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="col-sm-2">
-          <a href="https://www.instagram.com/lorisabbinante/" target="_blank">
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/cTEQfK" target="_blank">
             <i class="fa fa-5x fa-instagram fa-inverse" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-xs-4 icon-mobile">
           <a href="mailto:work.loris@gmail.com">
             <i class="fa fa-5x fa-envelope fa-inverse" aria-hidden="true"></i>
           </a>
@@ -229,5 +259,12 @@
 
   <!-- Bootstrap Core JavaScript -->
   <script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Typed.js - Plugin JavaScript to rewrite title of the avatar -->
+  <script src="vendor/typed/typed.js"></script>
+
+  <!-- Custom script for Typed.js plugin -->
+  <script src="js/rewrite.js"></script>
+
   </body>
 </html>
