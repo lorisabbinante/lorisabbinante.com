@@ -10,7 +10,8 @@
   }
 
   nav {
-    margin-top: 50px;
+    margin-top: 87px;
+    height: 143px;
   }
 
   nav > ul {
@@ -24,7 +25,7 @@
     color: #FFF;
     float: right;
     height: 100px;
-    width: 33.33%;
+    width: 25%;
   }
 
   nav ul a:hover {
@@ -39,8 +40,12 @@
     margin-top: 38px;
   }
 
+  #menuMobile li {
+    margin-top: 14px;
+  }
+
   #avatar {
-    margin-top: 87px;
+    margin-top: 27px;
   }
 
   #avatar img {
@@ -247,7 +252,7 @@
   } /* lascia */
 
   #avatar {
-    margin-top: 17px;
+    margin-top: 27px;
   } /* uguale */
 
   #avatar img {
