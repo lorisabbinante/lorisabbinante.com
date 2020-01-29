@@ -1,0 +1,107 @@
+/* Define the "system" font family */
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"),
+            local(".HelveticaNeueDeskInterface-Light"),
+            local(".LucidaGrandeUI"),
+            local("Ubuntu Light"),
+            local("Segoe UI Light"),
+            local("Roboto-Light"),
+            local("DroidSans"),
+            local("Tahoma");
+}
+
+body {
+    /* Now, let's apply it on an element */
+    font-family: "system";
+
+    height: 100vh;
+}
+
+#avatar {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px black;
+}
+
+.context {
+    font-size: 3em;
+    display: inline-block;
+}
+
+.context > svg {
+    width: 40px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.parentContext {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+}
+
+.child {
+    margin: auto;
+    text-align: center;
+}
+
+.links-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    margin: 0 auto;
+}
+
+#links {
+    margin: 1.67em 0;
+}
+
+#links > a {
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+    color: #222222;
+    padding: 0 0.5em;
+}
+
+#links > a > svg:hover {
+    color: rgb(165, 165, 165);
+}
+
+/* Dark and Light Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222222;
+        color: #ffffff;
+    }
+
+    #avatar {
+        box-shadow: none;
+    }
+
+    #links > a {
+        color: #ffffff;
+    }
+}
+
+.bodyDark {
+    background-color: #222222;
+        color: #ffffff;
+}
+
+.avatarDark {
+    box-shadow: none;
+}
+
+.linksDark {
+    color: #ffffff;
+}
