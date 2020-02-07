@@ -26,12 +26,7 @@ body {
   box-shadow: 10px 10px 10px black;
 }
 
-.context {
-    font-size: 3em;
-    display: inline-block;
-}
-
-.context > svg {
+.context > svg, .context > img {
     width: 40px;
 }
 
