@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- 3 obbligatory tags for every pages written in HTML -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css" type="text/css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <meta name="author" content="Loris Abbinante">
+    <meta name="keywords" content="Bootstrap, HTML5, CSS3, JavaScript, Responsive Website, Developer, Student">
+    <meta name="description" content="I'm Loris Abbinante, and i'm studying hard to become a developer.">
+    <title>Portfolio Page of Loris Abbinante</title>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83804452-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-83804452-1');
+    </script>
+  </head>
+  <body>
+
+  <!-- Main Section -->
+  <div id="bgMainSection">
+    <div class="container">
+
+      <!-- Nav -->
+      <div class="row">
+        <nav class="col-sm-6 col-sm-offset-6 text-center">
+            <ul>
+              <a class="collapsed" id="menuMobile" data-toggle="collapse" data-target="#navCollapse" href="#">
+                <li><i class="fa fa-bars fa-5x" aria-hidden="true"></i></li>
+              </a>
+            </ul>
+
+            <ul id="navCollapse" class="collapse">
+              <a href="#social">
+                <li>Social</li>
+              </a>
+              <a href="#bgSectionDone">
+                <li>Portfolio</li>
+              </a>
+              <a href="#sectionInProgress">
+                <li>Work in Progress</li>
+              </a>
+            </ul>
+        </nav>
+      </div>
+
+      <!-- Avatar -->
+      <div id="avatar" class="row text-center">
+        <img src="img/desktop/avatar.png" alt="avatar">
+
+        <div class="clearfix"></div>
+
+        <div id="typed-strings">
+        <h1>I am a <span>Programmar</span></h1>
+        <h1>I am a <span>Pro</span></h1>
+        <h1>I am a <span>Programmm</span></h1>
+        <h1>I am a <span>Problem Solver</span></h1>
+        <h1>I could <span>write code</span></h1>
+        </div>
+        <span id="typed"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section in Progress -->
+  <div id="sectionInProgress" class="text-center">
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Work in Progress Desktop -->
+        <div class="col-sm-6 hidden-xs">
+          <h1>Work in Progress</h1>
+          <h2>Site Store-Front</h2>
+          <a href="http://grafica2006.com" target="_blank">
+            <img class="shadow-img img-responsive center-block" src="img/desktop/grafica2006-progress-desktop.jpg" alt="Work in progress">
+          </a>
+          <p>Grafica2006.com is the first real site i created.<br>It uses a template called Agency built upon<br>the famous CSS framework Bootstrap.</p>
+        </div>
+
+        <!-- Work in Progress Mobile -->
+        <div id="workInProgressMobile" class="visible-xs">
+          <h1>Work in Progress</h1>
+          <h2>Site Store-Front</h2>
+          <a href="http://grafica2006.com" target="_blank">
+            <img class="shadow-img center-block" src="img/mobile/grafica2006-progress-mobile.jpg" alt="Work in progress">
+          </a>
+          <p>Grafica2006.com is the first real site i created.<br>It uses a template called Agency built upon<br>the famous CSS framework Bootstrap.</p>
+          <div id="dividerSectionInProgressMobile"></div>
+        </div>
+
+        <!-- Skill in Progress Desktop -->
+        <div id="skillInProgress" class="col-sm-6 hidden-xs">
+          <h1>Skill in Progress</h1>
+          <h2>JavaScript</h2>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+            <img class="shadow-img" src="img/desktop/js-progress-desktop.png" alt="Logo javascript">
+          </a>
+          <p>JavaScript is one of the most used programming<br>language used in web development.</p>
+        </div>
+
+        <!-- Skill in Progress Mobile -->
+        <div id="skillInProgressMobile" class="col-sm-6 visible-xs">
+          <h1>Skill in Progress</h1>
+          <h2>JavaScript</h2>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+            <img class="shadow-img" src="img/desktop/js-progress-desktop.png" alt="Logo javascript">
+          </a>
+          <p>JavaScript is one of the most used programming<br>language used in web development.</p>
+        </div>
+
+        <!-- Divider -->
+        <div id="dividerSectionInProgress" class="hidden-xs"></div>
+
+      </div> <!-- ./row -->
+    </div> <!-- ./container -->
+
+  </div> <!-- ./sectionInProgress -->
+
+  <!-- Section Done -->
+  <div id="bgSectionDone"></div>
+  <div id="sectionDone" class="text-center">
+
+    <div class="container">
+
+      <div class="row text-center">
+        <h1>Work Done</h1>
+      </div> <!-- ./title -->
+
+      <!-- Work Done -->
+      <div id="workDone" class="row text-center">
+
+        <div class="col-sm-4">
+          <h2>Site Store-Front</h2>
+          <a href="http://grafica2006.com" target="_blank">
+            <img class="shadow-img-workDone-mobile img-responsive center-block" src="img/desktop/grafica2006-done-desktop.jpg" alt="First project done">
+          </a>
+          <p>I created Grafica2006.com for improve my skills in<br>HTML5 and CSS3 combined in Bootstrap</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2>CV Online</h2>
+          <a href="http://lorisabbinante.com" target="_blank">
+            <img class="shadow-img-workDone-mobile img-responsive center-block" src="img/desktop/lorisabbinante-done-desktop.png" alt="Second project done">
+          </a>
+          <p>The design of my CV/Portfolio Page is made by me<br>and it is coded with Bootstrap (HTML5+CSS3) and<br>a little of JavaScript.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2>Coming Soon</h2>
+          <a href="#">
+            <img class="shadow-img-workDone-mobile img-responsive center-block" src="img/desktop/comingsoon-done-desktop.png" alt="Coming Soon">
+          </a>
+          <p>Coming Soon</p>
+        </div>
+
+      </div> <!-- ./workDone -->
+
+      <!-- Divider workDone -->
+      <div id="dividerWorkDone" class="text-center">
+        <i id="firstCircle" class="fa fa-circle" aria-hidden="true"></i>
+        <i id="secondCircle" class="fa fa-circle" aria-hidden="true"></i>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+      </div>
+
+      <!-- Title Skill Achieved -->
+      <div class="row text-center">
+        <h1>Skill Achieved</h1>
+      </div> <!-- ./title -->
+
+      <!-- Skill Achieved -->
+      <div class="row text-center">
+        <div class="col-sm-3 col-sm-offset-1">
+          <h2>HTML5</h2>
+          <a href="#">
+            <img class="shadow-img img-responsive center-block" src="img/desktop/html5-done-desktop.png" alt="Logo HTML5">
+          </a>
+          <p>HTML5 is the newest mark-up language<br>to structuring web page.</p>
+        </div>
+
+        <div class="col-sm-3 col-sm-offset-4">
+          <h2>CSS3</h2>
+          <a href="#">
+            <img class="shadow-img img-responsive center-block" src="img/desktop/css3-done-desktop.png" alt="Logo CSS3">
+          </a>
+          <p>CSS3 is the newest language to modify<br>the aspect of a web page.</p>
+        </div> <!-- ./skillAchieved -->
+
+      </div> <!-- ./row -->
+
+    </div> <!-- ./container -->
+  </div> <!-- ./sectionDone -->
+
+  <footer id="social">
+    <div class="container">
+      <div class="row text-center">
+
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/s3AM8i" target="_blank">
+            <i class="fa fa-5x fa-github fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/bZdkh8" target="_blank">
+            <i class="fa fa-5x fa-twitter fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/H8yJf1" target="_blank">
+            <i class="fa fa-5x fa-medium fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="#" target="_blank">
+            <i class="fa fa-5x fa-twitch fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="https://goo.gl/cTEQfK" target="_blank">
+            <i class="fa fa-5x fa-instagram fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 icon-mobile">
+          <a href="mailto:work.loris@gmail.com">
+            <i class="fa fa-5x fa-envelope fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery 3.2.1 -->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Typed.js - Plugin JavaScript to rewrite title of the avatar -->
+  <script src="vendor/typed/typed.js"></script>
+
+  <!-- Custom script for Typed.js plugin -->
+  <script src="js/rewrite.js"></script>
+
+  </body>
+</html>
